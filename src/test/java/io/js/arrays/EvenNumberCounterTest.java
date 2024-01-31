@@ -5,12 +5,12 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class EvenNumbersTest {
-    private EvenNumbers finder;
+class EvenNumberCounterTest {
+    private EvenNumberCounter finder;
 
     @BeforeEach
     void setUp() {
-        finder = new EvenNumbers();
+        finder = new EvenNumberCounter();
     }
 
     @Test
