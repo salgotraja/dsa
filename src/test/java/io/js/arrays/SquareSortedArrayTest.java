@@ -1,18 +1,12 @@
 package io.js.arrays;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 class SquareSortedArrayTest {
 
-    private SquareSortedArray processor;
-
-    @BeforeEach
-    void setUp() {
-        processor = new SquareSortedArray();
-    }
+    private final SquareSortedArray processor = new SquareSortedArray();
 
     @Test
     void sortedSquares() {

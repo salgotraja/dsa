@@ -1,17 +1,11 @@
 package io.js.arrays;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class EvenNumberCounterTest {
-    private EvenNumberCounter finder;
-
-    @BeforeEach
-    void setUp() {
-        finder = new EvenNumberCounter();
-    }
+    private final EvenNumberCounter finder = new EvenNumberCounter();;
 
     @Test
     void testFindNumbers() {

@@ -1,16 +1,11 @@
 package io.js.arrays;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class FindMaxConsecutiveOnesTest {
-    private FindMaxConsecutiveOnes findMaxConsecutiveOnes;
-    @BeforeEach
-    void setUp() {
-        findMaxConsecutiveOnes = new FindMaxConsecutiveOnes();
-    }
+    private final FindMaxConsecutiveOnes findMaxConsecutiveOnes = new FindMaxConsecutiveOnes();
 
     @Test
     void testFindMaxConsecutiveOnes() {

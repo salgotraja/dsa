@@ -1,18 +1,12 @@
 package io.js.arrays;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 class DuplicateZerosTest {
 
-    private DuplicateZeros duplicateZeros;
-
-    @BeforeEach
-    void setUp() {
-        duplicateZeros = new DuplicateZeros();
-    }
+    private final DuplicateZeros duplicateZeros = new DuplicateZeros();;
 
     @Test
     public void testDuplicateZeros() {
