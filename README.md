@@ -3,7 +3,7 @@
 
 # Technologies
 ```
-- Java 21 (can run on java 8+)
+- Java 21 (>= java 8+)
 - Junit 5
 - AssertJ
 - Maven
