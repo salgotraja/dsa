@@ -21,6 +21,17 @@ class RemoveDuplicateTest {
     }
 
     @Test
+    void testRemoveDuplicatesUpdated() {
+        int[] nums = {1,1,2};
+        int expected = 2;
+        int actual = removeDuplicate.removeDuplicatesUpdated(nums);
+        assertEquals(expected, actual);
+
+        nums = new int[] {0,0,1,1,1,2,2,3,3,4};
+        assertEquals(5, removeDuplicate.removeDuplicatesUpdated(nums));
+    }
+
+    @Test
     void testRemoveDuplicatesWithEmptyArray() {
         int[] nums = {};
         int expected = 0;
@@ -29,10 +40,26 @@ class RemoveDuplicateTest {
     }
 
     @Test
+    void testRemoveDuplicatesUpdatedWithEmptyArray() {
+        int[] nums = {};
+        int expected = 0;
+        int actual = removeDuplicate.removeDuplicatesUpdated(nums);
+        assertEquals(expected, actual);
+    }
+
+    @Test
     void testRemoveDuplicatesWithNoDuplicates() {
         int[] nums = {1, 2, 3, 4, 5};
         int expected = 5;
         int actual = removeDuplicate.removeDuplicates(nums);
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    void testRemoveDuplicatesUpdatedWithNoDuplicates() {
+        int[] nums = {1, 2, 3, 4, 5};
+        int expected = 5;
+        int actual = removeDuplicate.removeDuplicatesUpdated(nums);
         assertEquals(expected, actual);
     }
 

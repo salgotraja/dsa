@@ -20,7 +20,7 @@ class ReplaceElementsTest {
         result = replaceElements.replaceElements(arr);
         assertThat(result).isEqualTo(expected);
 
-        arr = new int[] {500, 400};
+        arr = new int[] {500, 400}  ;
         expected = new int[]{400, -1};
         result = replaceElements.replaceElement(arr);
         assertThat(result).isEqualTo(expected);
